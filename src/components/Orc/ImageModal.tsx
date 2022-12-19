@@ -32,7 +32,7 @@ export const ImageModal = ({
       <ModalContent>
         <ModalCloseButton />
 
-        <Image src="/images/23-o.jpg" alt="teste" />
+        <Image src="/images/valve.jpg" alt="teste" />
       </ModalContent>
     </Modal>
   );
