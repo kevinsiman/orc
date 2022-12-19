@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
 
-export const Main = ({ children }: any) => {
+const Main = ({ children }: any) => {
   return (
     <Box as="main">
       <Head>
@@ -12,3 +12,5 @@ export const Main = ({ children }: any) => {
     </Box>
   );
 };
+
+export default Main;

@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { Input, Box } from "@chakra-ui/react";
-import { useRouter } from "next/router";
+import { useRouter as rou } from "next/router";
 
 import { OrcamentoDetalhe } from "../components/Orc/Detalhes/OrcamentoDetalhe";
 import {
@@ -13,7 +13,7 @@ import {
 } from "./api/hello";
 
 const orcamento = () => {
-  const router = useRouter();
+  const router = rou();
   const newP = router.query.pedido;
 
   const items = DBItens.filter((item) => item.pedido === newP);
